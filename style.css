@@ -494,7 +494,7 @@
         
     }
     .chat-description{
-        width:80%;
+        width:fit-content;
         font-size: 16px;
     }
     .chat-app-title,
