@@ -194,38 +194,37 @@
     margin-bottom: 20px;
   }
   .project-part {
-    display: flex;
-    /* flex-wrap: wrap; Allows items to wrap in smaller screens */
-    gap: 30px;
-    justify-content: space-between;
-    margin: 20px 20px;
-    overflow-y: hidden;
-    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+    margin: 20px;
+    overflow: hidden;
   }
   
 
 
 .chat-application-section {
-  display: flex;
+   display: flex;
   flex-direction: column;
-  align-items: start;
-  width: 600px;
-  height: 500px;
-  margin: auto;
+  align-items: center;
+  width: 100%; 
+  max-width: 600px; 
+  height: auto; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background:#EAE6E1;
-  padding: 2%;
+  background: #EAE6E1;
+  padding: 1%;
   border-radius: 10px;
+  margin: 0;
 }
 .chat-application-section1 {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  width: 1000px;
+  align-items:center;
+  width: 1050px;
   margin: auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   background:#EAE6E1;
-  padding: 2%;
+  padding: 1%;
   border-radius: 10px;
 }
 
@@ -274,7 +273,7 @@
   width: 100%;
   text-align: start;
   color: #A74D4A;
-  font-size: 32px;
+  font-size: 30px;
   font-family: 'Ledger', serif;
   font-weight:600;
   margin-top: 20px;
@@ -296,7 +295,7 @@
   color: black;
   font-family: 'Ledger', serif;
   font-weight: 400;
-  padding: 10px 0;
+  padding: 10px 10px;
   word-wrap: break-word;
 }
 
